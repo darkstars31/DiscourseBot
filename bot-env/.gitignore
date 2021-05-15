@@ -1,2 +1,3 @@
-/lib
+lib/**
+_pycache_/**
 keys.py
