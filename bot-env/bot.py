@@ -1,4 +1,5 @@
 import discord
+import keys
 
 class MyClient(discord.Client):
 	async def on_ready(self):
@@ -10,4 +11,4 @@ class MyClient(discord.Client):
 		print('Message from {0.author}: {0.content}'.format(message))
 
 client = MyClient()
-client.run('ODM4NDg3NDA5NDU2NzA5Njcz.YI70QA.y_-fpJOk__e3BzqCp-9WIrLxENM')
+client.run(keys.getDiscordBotKey())
